@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plotador de Onda Quadrada Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="vendor/plotly-latest.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Plotador de Onda Quadrada - Online</h1>
+        <p class="contributor">Por: Guilherme Rodrigues</p>
+    </header>
+    <div class="content">
+        <div class="wave-config">
+            <label for="input-wave-frequency">Frequência da Onda:</label>
+            <input type="number" id="input-wave-frequency" min="0.0001" placeholder="Hz">
+            <label for="input-wave-periods">Periodos:</label>
+            <input type="number" id="input-wave-periods" min="1" placeholder="Nº de Periodos">
+            <button id="btn-plot-wave">Plotar</button>
+        </div>
+        <div id="plot-wave-area" class="plot-wave-area"></div>
+    </div>
+    <footer>
+        <p>Feito sobre: <a href="https://plotly.com"> plotly.com</a></p>
+    </footer>
+
+    <script src="js/square-wave-generator.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

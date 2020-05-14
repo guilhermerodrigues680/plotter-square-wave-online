@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    font-weight: normal;
+    margin: 0;
+}
+
+.contributor {
+    font-size: smaller;
+}
+
+.content {
+    margin: 10px 0 10px 0;
+}
+
+.wave-config {
+    font-weight: bold;
+}
+
+.plot-wave-area {
+    /* width:600px; */
+    width: 95%;
+    height:50%;
+    margin: 30px 0 10px 0;
+}
+
+footer p {
+    font-weight: bold;
+}
