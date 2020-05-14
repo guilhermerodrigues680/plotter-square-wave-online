@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plotador de Onda Quadrada Online</title>
+    <title>Plotador de Onda Quadrada Com Duty Cicle Online</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="vendor/plotly-latest.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>Plotador de Onda Quadrada - Online</h1>
+        <h1>Plotador de Onda Quadrada Com Duty Cicle - Online</h1>
         <p class="contributor">Por: Guilherme Rodrigues</p>
-        <p><a href="square-wave-with-duty-cicle.html">Plotador de Onda Quadrada Com Duty Cicle</a></p>
+        <p><a href="index.html">Plotador de Onda Quadrada</a></p>
     </header>
     <div class="content">
         <div class="wave-config">
@@ -19,6 +19,8 @@
             <input type="number" id="input-wave-frequency" min="0" step="10" placeholder="Hz" value="1">
             <label for="input-wave-periods">Periodos:</label>
             <input type="number" id="input-wave-periods" min="1" placeholder="Nº de Periodos" value="2">
+            <label for="input-wave-dutycicle">Duty Cicle:</label>
+            <input type="number" id="input-wave-dutycicle" min="0" max="100" step="5" placeholder="% Duty Cicle" value="20">
             <button id="btn-plot-wave">Plotar</button>
         </div>
         <div id="plot-wave-area" class="plot-wave-area"></div>
@@ -31,6 +33,6 @@
     </footer>
 
     <script src="js/square-wave-generator.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/square-wave-with-duty-cicle.js"></script>
 </body>
 </html>
